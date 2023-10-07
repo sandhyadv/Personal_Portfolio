@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Personal Portfolio Website Design | Srinidhi</title>
+
+  <!-- box icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- header design -->
+  <header class="header">
+    <a href="#" class="logo">Portfolio.</a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home" class="nav-links active active-navlink" onmouseenter="underline()">Home</a>
+      <a href="#about" class="nav-links " onmouseenter="underline()">About</a>
+      <a href="#services" class="nav-links " onmouseenter="underline()">Services</a>
+      <a href="#projects" class="nav-links " onmouseenter="underline()">Projects</a>
+      <a href="#contact" class="nav-links " onmouseenter="underline()">Contact</a>
+    </nav>
+  </header>
+  <!-- home section design -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1>Sandhya D V</h1>
+      <h3>And i'm a <span class="multiple-text"></span></h3>
+      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sit, </p> -->
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/sandhya-devarakonda-1901641b3/" target="_blank"><i
+            class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/sandhyadv" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+      </div>
+      <a href="images/Resume.pdf" download class="btn">Download CV</a>
+    </div>
+
+    <span class="home-img">
+      <span class="home-img1">
+        <img src="images/main.JPG" alt="">
+      </span>
+    </span>
+  </section>
+  <!-- about section design -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <!-- <div class="about-img1">
+        <img src="images/main.JPG" alt="">
+      </div> -->
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading">About <span class="multiple-text">Me</span></h2>
+      <h3>Frontend Developer</h3>
+      <p>Skilled Software and Web Developer Empowers Digital Innovation with Cutting-Edge Solutions.</p><br />
+      <!-- <a href="#" class="btn">Read More</a> -->
+
+      <div>
+        <div class="tab-titles">
+          <div class="tab-links present-link" onclick="opentab('skills')">Skills</div>
+          <div class="tab-links" onclick="opentab('experience')">Experience</div>
+          <div class="tab-links" onclick="opentab('education')">Education</div>
+        </div>
+        <div class="tab-contents present-tab" id="skills">
+          <ul>
+            <li><span class="span1">UI/UX</span><br><span class="span2">Designing Web/App interfaces</span></li>
+            <li><span class="span1">Web Development</span><br><span class="span2">Web app Development</span></li>
+            <li><span class="span1">App Development</span><br><span class="span2">Building Android Apps</span></li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span class="span1">2022-2023</span><br><span class="span2">Clarivate Analytics</span></li>
+            <li><span class="span1">2022</span><br><span class="span2">Compsoft Technologies</span></li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span class="span1">2019-2023</span><br><span class="span2">BE - Sri Venkateshwara College Of
+                Engineering
+                from VTU.<br>7.5 CGPA</span></li>
+            <li><span class="span1">2017-2019</span><br><span class="span2">PUC - Anubhava Mantapa<br>76%</span>
+            </li>
+            <li><span class="span1">2017</span><br><span class="span2">SSLC - Adarsha Vidyalaya<br>91.52%</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- services section design -->
+  <section class="services" id="services">
+    <h2 class="heading">Services</h2>
+
+    <div class="services-container">
+      <div class="services-box">
+        <i class='bx bx-code-alt'></i>
+        <h3>Web Developement</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bxs-paint'></i>
+        <h3>Graphic Design</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bx-joystick'></i>
+        <h3>Game Developement</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- projects section design -->
+  <section class="projects" id="projects">
+    <h2 class="heading">Latest <span class="multiple-text">Project's</span></h2>
+
+    <div class="projects-container">
+      <div class="projects-box">
+        <img src="images/Ecommerce.png" alt="">
+        <div class="projects-layer">
+          <h4>Ecommerce App</h4>
+          <a href="" target="_blank"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="projects-box">
+        <img src="images/Weather-Forecast.png" alt="">
+        <div class="projects-layer">
+          <h4>Weather-Forecast</h4>
+          <a href="https://weather-forecasts-2xirhttbr-sandhya-d-vs-projects.vercel.app/weather" target="_blank"><i
+              class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="projects-box">
+        <img src="images/Jokes Api App.JPG" alt="">
+        <div class="projects-layer">
+          <h4>Jokes Api App</h4>
+          <a href="#"><i class='bx bx-link-external' target="_blank"></i></a>
+        </div>
+      </div>
+      <div class="projects-box">
+        <img
+          src="https://images.unsplash.com/photo-1607434472257-d9f8e57a643d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80"
+          alt="">
+        <div class="projects-layer">
+          <h4>Loading</h4>
+          <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="projects-box">
+        <img
+          src="https://images.unsplash.com/photo-1607434472257-d9f8e57a643d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80"
+          alt="">
+        <div class="projects-layer">
+          <h4>Loading</h4>
+          <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="projects-box">
+        <img
+          src="https://images.unsplash.com/photo-1607434472257-d9f8e57a643d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80"
+          alt="">
+        <div class="projects-layer">
+          <h4>Loading</h4>
+          <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact section design -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span class="multiple-text">Me!</span></h2>
+
+    <form action="https://formspree.io/f/mdorpplb" method="POST">
+      <div class="input-box">
+        <input type="text" name="Username" id="name" placeholder="Full Name" autocomplete="off" required>
+        <input type="email" name="Email" id="email" placeholder="Email Address" autocomplete="off" required>
+      </div>
+
+      <div class="input-box">
+        <input type="text" name="Contact No" id="number" placeholder="Mobile Number" autocomplete="off" required>
+        <input type="text" name="Subject" id="subject" placeholder="Email Subject" autocomplete="off">
+      </div>
+
+      <textarea name="message" name="Message" id="message" cols="30" rows="10" placeholder="Your Message"
+        autocomplete="off" minlength="5"></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+  </section>
+  <!-- footer design -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyrights &copy; 2023 by Sandhya D V | All Rights Reserved.</p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bxs-chevrons-up'></i></a>
+    </div>
+  </footer>
+
+  <!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- typed js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- custom js -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
