@@ -654,7 +654,7 @@ span.multiple-text {
     font-weight: 600;
     cursor: pointer;
     position: relative;
-    color: #0ef;
+    color: rgb(242, 0, 255);
     transition: 0.5s ease;
   }
 
