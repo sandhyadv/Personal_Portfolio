@@ -90,7 +90,7 @@ section {
   font-weight: 600;
   cursor: pointer;
   position: relative;
-  color: #0ef;
+  color: rgb(242, 0, 255);
 }
 
 .nav-links::after {
